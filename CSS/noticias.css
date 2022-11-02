@@ -38,8 +38,10 @@ nav{
     background-color: #AAAAAA;
     grid-area: sectionB;
     text-align: center;
-            
+                
 }
+
+
 
 footer {
     background-color: rgb(158, 158, 158);
@@ -48,6 +50,7 @@ footer {
     position: absolute;
     bottom: 0;
     width: 100%;
+    
 }
 
 
@@ -64,30 +67,6 @@ footer {
     margin:0;
     }
 
-/*texto cuerpo*/
-
-.textoInicio {
-    padding-left: 11px;
-    margin-left: 20px;
-    margin-top: 60px;
-    margin-bottom: 60px;
-    color: white; 
-    border-left: solid 5px #202020;
-    line-height: 40px;
-}
-
-.tituloInicio { 
-    font-size: 30px; 
-    font-family: 'Montserrat', sans-serif;
-    font-weight: 600;
-    }
-
-.subtituloInicio {
-    font-size: 20px;
-    font-family: 'Montserrat';
-    font-weight: 400;
-      
-}
 
 /*footer*/
 
@@ -144,7 +123,6 @@ footer {
         position: absolute;
         bottom: 0;
         width: 100%;
-        
     }
     
     /*isotipo*/
@@ -223,9 +201,12 @@ footer {
         background-color: #AAAAAA;
     }
     
+    
     nav{
-        grid-area: nav;    
+        grid-area: nav;
+               
     }
+    
     
     .sectionA { 
         background-color: #AAAAAA;
@@ -261,38 +242,12 @@ footer {
         margin: 10px;
     }
 
-            
-    /*imagen cuerpo*/
-    .fondoInicio {
-        height: 520px; 
-        transform: translate(10px);
-        margin:0;
-        }
     
-    /*texto cuerpo*/
-    
-    .textoInicio {
-        padding-left: 11px;
-        margin-left: 130px;
-        margin-top: 200px;
-        color: white; 
-        border-left: solid 5px #202020;
-        line-height: 40px;
+    .card {    
+        margin-left: 50px;
+        margin-top: 30px;  
     }
-    
-    .tituloInicio { 
-        font-size: 40px; 
-        font-family: 'Montserrat', sans-serif;
-        font-weight: 600;
-        }
-    
-    .subtituloInicio {
-        font-size: 25px;
-        font-family: 'Montserrat';
-        font-weight: 400;
-          
-    }
-    
+
     /*footer*/
     
     /*logo*/
