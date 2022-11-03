@@ -1,66 +1,59 @@
 body{
-    height: 100%;
-    margin:0;
-    background-color: #202020;
+  height: 100%;
+  margin:0;
+  background-color: #202020;
     
 } 
 
 
 /*VERSION DE ESCRITORIO*/
-    .contenedor{
-        display: grid;
-        grid-template-areas: 
-        "header nav"
-        "sectionA sectionB"
-        "footer footer";
-    }
-    header {
-        background-color: #202020;
-    }
-    
-    
-    nav{
-        grid-area: nav;
-               
-    }
-    
-    
-    .sectionA { 
-        background-color: #202020;
-        grid-area: sectionA;
-    }
-    
-    .sectionB {
-        background-color: #202020;
-        grid-area: sectionB;
-                
-    }
-    
-    footer {
-        background-color: #202020;
-        grid-area: footer;
-        text-align: center;
-        bottom: 0;
-        width: 100%;
-    }
-    
-    /*isotipo*/
-    .logo {
-        height: 40px; 
-        margin-left: 40px;
-        margin-top: 20px;
-    }
-    
-    /*navegador*/
-        
+.contenedor{
+  display: grid;
+  grid-template-areas: 
+  "header nav"
+  "sectionA sectionB"
+  "footer footer";
+}
+  
+header {
+  background-color: #202020;
+}
+  
+nav{
+  grid-area: nav;       
+}
+      
+.sectionA { 
+  background-color: #202020;
+  grid-area: sectionA;
+}
+  
+.sectionB {
+  background-color: #202020;
+  grid-area: sectionB;         
+}
+  
+footer {
+  background-color: #202020;
+  grid-area: footer;
+  text-align: center;
+  bottom: 0;
+  width: 100%;
+}
+  
+/*isotipo*/
+.logo {
+  height: 40px; 
+  margin-left: 40px;
+  margin-top: 20px;
+}
+  
+/*navegador*/
+      
 .nav-link {
-    color: white;
-        margin: 10px;
-    }
-
-            
-    
-
+  color: white;
+  margin: 10px;
+}
 
 
 /*formulario*/
@@ -188,17 +181,16 @@ p{
 
 /*footer*/
     
-    /*logo*/
-    .logoFooter {
-        height: 20px; 
-        margin-top: 7px;
-            
-    }
-    
-    /*texto footer*/
-    .textoFooter {
-        color: white;
-        font-family: 'Montserrat';
-        margin-top: 1px;
-        font-size: 12px;
-    }
+/*logo*/
+.logoFooter {
+  height: 20px; 
+  margin-top: 7px;  
+}
+
+/*texto footer*/
+.textoFooter {
+  color: white;
+  font-family: 'Montserrat';
+  margin-top: 1px;
+  font-size: 12px;
+}

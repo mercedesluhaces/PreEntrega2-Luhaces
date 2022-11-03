@@ -24,8 +24,7 @@ header {
 
 
 nav{
-    grid-area: nav;
-    
+    grid-area: nav;   
 }
 
 
@@ -37,8 +36,7 @@ nav{
 .sectionB {
     background-color: #202020;
     grid-area: sectionB;
-    text-align: center;
-            
+    text-align: center;           
 }
 
 footer {
@@ -81,13 +79,20 @@ footer {
     font-family: 'Montserrat', sans-serif;
     font-weight: 600;
     line-height: 30px;
-    }
+}
 
 .subtituloInicio {
-    font-size: 10px;
+    font-size: 12px;
     font-family: 'Montserrat';
     font-weight: 400;
     line-height: 20px;
+    padding-right: 20px;
+}
+
+/*navegador*/
+.nav-link {
+    color: white;
+    margin: 10px;
 }
 
 /*footer*/
@@ -122,8 +127,7 @@ footer {
     
     
     nav{
-        grid-area: nav;
-               
+        grid-area: nav;           
     }
     
     
@@ -154,8 +158,7 @@ footer {
         margin-top: 20px;
     }
     
-    /*navegador*/
-        
+    /*navegador*/  
     .nav-link {
         color: white;
         margin: 10px;
@@ -167,16 +170,14 @@ footer {
         height: 520px; 
         transform: translate(-5px);
         margin:0;
-        }
+    }
     
-    /*texto cuerpo*/
-    
+    /*texto cuerpo*/    
     .textoInicio {
         padding-left: 11px;
         margin-left: 80px;
         margin-top: 100px;
-        color: white; 
-      
+        color: white;      
     }
     
     .tituloInicio { 
@@ -185,8 +186,7 @@ footer {
         font-weight: 600;
         line-height: 40px;
         margin-bottom: 20px;
-     
-        }
+    }
     
     .subtituloInicio {
         font-size: 15px;
@@ -194,7 +194,6 @@ footer {
         font-weight: 400;
         line-height: 30px;
         padding-right: 100px;
-          
     }
     
     /*footer*/
@@ -202,8 +201,7 @@ footer {
     /*logo*/
     .logoFooter {
         height: 20px; 
-        margin-top: 7px;
-            
+        margin-top: 7px;           
     }
     
     /*texto footer*/
