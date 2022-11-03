@@ -2,11 +2,13 @@ body{
     height: 100%;
     margin:0;
     background-color: #202020;
+    
 } 
 
 
 /*VERSION DE ESCRITORIO*/
     .contenedor{
+        display: grid;
         grid-template-areas: 
         "header nav"
         "sectionA sectionB"
@@ -38,7 +40,6 @@ body{
         background-color: #202020;
         grid-area: footer;
         text-align: center;
-        position: absolute;
         bottom: 0;
         width: 100%;
     }
