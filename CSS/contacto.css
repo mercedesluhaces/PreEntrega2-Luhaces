@@ -1,38 +1,38 @@
-body{
+body {
   height: 100%;
-  margin:0;
+  margin: 0;
   background-color: #202020;
-    
-} 
+
+}
 
 
 /*VERSION DE ESCRITORIO*/
-.contenedor{
+.contenedor {
   display: grid;
-  grid-template-areas: 
-  "header nav"
-  "sectionA sectionB"
-  "footer footer";
+  grid-template-areas:
+    "header nav"
+    "sectionA sectionA"
+    "footer footer";
 }
-  
+
 header {
   background-color: #202020;
 }
-  
-nav{
-  grid-area: nav;       
+
+nav {
+  grid-area: nav;
 }
-      
-.sectionA { 
+
+.sectionA {
   background-color: #202020;
   grid-area: sectionA;
 }
-  
+
 .sectionB {
   background-color: #202020;
-  grid-area: sectionB;         
+  grid-area: sectionB;
 }
-  
+
 footer {
   background-color: #202020;
   grid-area: footer;
@@ -40,16 +40,16 @@ footer {
   bottom: 0;
   width: 100%;
 }
-  
+
 /*isotipo*/
 .logo {
-  height: 40px; 
+  height: 40px;
   margin-left: 40px;
   margin-top: 20px;
 }
-  
+
 /*navegador*/
-      
+
 .nav-link {
   color: white;
   margin: 10px;
@@ -58,133 +58,133 @@ footer {
 
 /*formulario*/
 
-.sectionA{  
-  width: 460px; 
+.sectionA {
+  width: 460px;
   height: auto;
   margin: 80px auto;
-  border-radius: 10px;  
+  border-radius: 10px;
   padding-top: 30px;
-  padding-bottom: 20px;  
-  background-color: #fbfbfb; 
-  padding-left: 30px; 
+  padding-bottom: 20px;
+  background-color: #fbfbfb;
+  padding-left: 30px;
 }
 
 
-input{
-  background-color: #fbfbfb; 
-  width: 408px; 
-  height: 40px; 
-  border-radius: 5px;  
-  border-style: solid; 
-  border-width: 1px; 
-  border-color: #202020; 
-  margin-top: 10px;  
+input {
+  background-color: #fbfbfb;
+  width: 408px;
+  height: 40px;
+  border-radius: 5px;
+  border-style: solid;
+  border-width: 1px;
+  border-color: #202020;
+  margin-top: 10px;
   padding-left: 10px;
-  margin-bottom: 20px; 
+  margin-bottom: 20px;
 }
 
 
-textarea{
-  background-color: #fbfbfb; 
-  width: 405px; 
-  height: 150px; 
-  border-radius: 5px;  
-  border-style: solid; 
-  border-width: 1px; 
-  border-color: #202020; 
-  margin-top: 10px;  
+textarea {
+  background-color: #fbfbfb;
+  width: 405px;
+  height: 150px;
+  border-radius: 5px;
+  border-style: solid;
+  border-width: 1px;
+  border-color: #202020;
+  margin-top: 10px;
   padding-left: 10px;
-  margin-bottom: 20px; 
-  padding-top: 15px; 
+  margin-bottom: 20px;
+  padding-top: 15px;
 }
 
 
-label{
-  display: block; 
-  float: center;  
+label {
+  display: block;
+  float: center;
 }
 
 
-button{
-  height: 45px; 
+button {
+  height: 45px;
   padding-left: 5px;
-  padding-right: 5px;   
-  margin-bottom: 20px; 
-  margin-top: 10px;   
+  padding-right: 5px;
+  margin-bottom: 20px;
+  margin-top: 10px;
   text-transform: uppercase;
-  background-color: #202020; 
-  border-color: #202020; 
-  border-style: solid; 
-  border-radius: 10px;  
-  width: 420px;   
+  background-color: #202020;
+  border-color: #202020;
+  border-style: solid;
+  border-radius: 10px;
+  width: 420px;
   cursor: pointer;
 }
 
 
-button p{
-  color: #fff; 
+button p {
+  color: #fff;
 }
 
 
-span{
-  color: #202020; 
-}
-
-
-.aviso{
-  font-size: 13px;  
-  color: #0e0e0e;  
-}
-
-
-h1{
-  font-size: 39px;  
-  text-align: letf; 
-  padding-bottom: 20px; 
+span {
   color: #202020;
 }
 
 
-h3{
-  font-size: 16px; 
-  padding-bottom: 30px;
-  color: #0e0e0e;   
+.aviso {
+  font-size: 13px;
+  color: #0e0e0e;
 }
 
 
-p{
-  font-size: 14px; 
-  color: #0e0e0e; 
+h1 {
+  font-size: 39px;
+  text-align: letf;
+  padding-bottom: 20px;
+  color: #202020;
+}
+
+
+h3 {
+  font-size: 16px;
+  padding-bottom: 30px;
+  color: #0e0e0e;
+}
+
+
+p {
+  font-size: 14px;
+  color: #0e0e0e;
 }
 
 
 ::-webkit-input-placeholder {
- color: #a8a8a8;
+  color: #a8a8a8;
 }
 
 
 ::-webkit-textarea-placeholder {
- color: #a8a8a8;
+  color: #a8a8a8;
 }
 
 
-.formulario input:focus{
-  outline:0;
+.formulario input:focus {
+  outline: 0;
   border: 1px solid #AAAAAA;
 }
 
 
-.formulario textarea:focus{
-  outline:0;
+.formulario textarea:focus {
+  outline: 0;
   border: 1px solid #AAAAAA;
 }
 
 /*footer*/
-    
+
 /*logo*/
 .logoFooter {
-  height: 20px; 
-  margin-top: 7px;  
+  height: 20px;
+  margin-top: 7px;
 }
 
 /*texto footer*/

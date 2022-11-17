@@ -1,81 +1,180 @@
 body {
     height: 100%;
-    margin:0;
+    margin: 0;
     background-color: #AAAAAA;
-} 
+}
 
 /*VERSION DE ESCRITORIO*/
-    .contenedor{
-        display: grid;
-        grid-template-areas: 
+.contenedor {
+    display: grid;
+    grid-template-areas:
         "header nav nav"
         "articulo1 articulo2 articulo3"
         "footer footer footer";
+}
+
+.main {
+    grid-template-rows: auto;
+}
+
+header {
+    background-color: #AAAAAA;
+}
+
+nav {
+    grid-area: nav;
+}
+
+div.articulo1 {
+    background-color: #AAAAAA;
+    grid-area: articulo1;
+}
+
+div.articulo2 {
+    background-color: #AAAAAA;
+    grid-area: articulo2;
+}
+
+div.articulo3 {
+    background-color: #AAAAAA;
+    grid-area: articulo3;
+}
+
+footer {
+    background-color: rgb(158, 158, 158);
+    grid-area: footer;
+    text-align: center;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+
+/*isotipo*/
+.logo {
+    height: 40px;
+    margin-left: 40px;
+    margin-top: 20px;
+}
+
+/*navegador*/
+
+.nav-link {
+    color: white;
+    margin: 10px;
+}
+
+/*noticias*/
+.card {
+    margin-top: 30px;
+}
+
+
+.card-title {
+    font-family: 'Montserrat';
+    font-size: 18px;
+}
+
+.btn {
+    color: white;
+}
+
+.btn-primary {
+    background-color: #202020;
+    border-color: #202020;
+}
+
+/* footer */
+
+/*logo*/
+.logoFooter {
+    height: 20px;
+    margin-top: 7px;
+}
+
+/*texto footer*/
+.textoFooter {
+    color: white;
+    font-family: 'Montserrat';
+    margin-top: 1px;
+    font-size: 12px;
+}
+
+/*VERSION DE CELULAR*/
+@media (max-width:600px) {
+    .contenedor {
+        display: grid;
+        grid-template-areas:
+            "header nav nav"
+            "articulo1 articulo1 articulo1"
+            "articulo2 articulo2 articulo2"
+            "articulo3 articulo3 articulo3"
+            "footer footer footer";
     }
 
-    .main{
+    .main {
         grid-template-rows: auto;
     }
 
     header {
         background-color: #AAAAAA;
     }
-    
-    nav{
-        grid-area: nav;      
+
+    nav {
+        grid-area: nav;
     }
 
-    div.articulo1 { 
+    div.articulo1 {
         background-color: #AAAAAA;
         grid-area: articulo1;
     }
-    
-    div.articulo2 { 
+
+    div.articulo2 {
         background-color: #AAAAAA;
         grid-area: articulo2;
     }
 
-    div.articulo3 { 
+    div.articulo3 {
         background-color: #AAAAAA;
         grid-area: articulo3;
     }
-    
+
     footer {
         background-color: rgb(158, 158, 158);
         grid-area: footer;
         text-align: center;
-        position:absolute;
         bottom: 0;
         width: 100%;
     }
-    
+
+
     /*isotipo*/
     .logo {
-        height: 40px; 
+        height: 40px;
         margin-left: 40px;
         margin-top: 20px;
     }
-    
+
     /*navegador*/
-        
+
     .nav-link {
         color: white;
         margin: 10px;
     }
 
-    .card {    
+    .card {
         margin-left: 50px;
         margin-top: 30px;
     }
 
     /* footer */
-    
+
     /*logo*/
     .logoFooter {
-        height: 20px; 
+        height: 20px;
         margin-top: 7px;
     }
-    
+
     /*texto footer*/
     .textoFooter {
         color: white;
@@ -83,4 +182,4 @@ body {
         margin-top: 1px;
         font-size: 12px;
     }
-
+}

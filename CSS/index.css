@@ -1,9 +1,9 @@
 body {
     height: 100%;
-    margin:0;
+    margin: 0;
     background-color: #AAAAAA;
     overflow-y: hidden;
-} 
+}
 
 
 /*GRID AREA*/
@@ -11,11 +11,11 @@ body {
 
 .contenedor {
     display: grid;
-    grid-template-areas: 
-    "header nav"
-    "sectionB sectionB"
-    "sectionA sectionA"
-    "footer footer";
+    grid-template-areas:
+        "header nav"
+        "sectionB sectionB"
+        "sectionA sectionA"
+        "footer footer";
 }
 
 header {
@@ -23,13 +23,13 @@ header {
 }
 
 
-nav{
+nav {
     grid-area: nav;
 }
 
 
-.sectionA { 
-    background-color:#AAAAAA;
+.sectionA {
+    background-color: #AAAAAA;
     grid-area: sectionA;
 }
 
@@ -37,7 +37,7 @@ nav{
     background-color: #AAAAAA;
     grid-area: sectionB;
     text-align: center;
-            
+
 }
 
 footer {
@@ -52,16 +52,16 @@ footer {
 
 /*isotipo*/
 .logo {
-    height: 40px; 
+    height: 40px;
     margin-left: 40px;
     margin-top: 20px;
 }
 
 /*imagen cuerpo*/
 .fondoInicio {
-    height: 320px; 
-    margin:0;
-    }
+    height: 320px;
+    margin: 0;
+}
 
 /*texto cuerpo*/
 .textoInicio {
@@ -69,30 +69,30 @@ footer {
     margin-left: 20px;
     margin-top: 60px;
     margin-bottom: 60px;
-    color: white; 
+    color: white;
     border-left: solid 5px #202020;
     line-height: 40px;
 }
 
-.tituloInicio { 
-    font-size: 30px; 
+.tituloInicio {
+    font-size: 30px;
     font-family: 'Montserrat', sans-serif;
     font-weight: 600;
-    }
+}
 
 .subtituloInicio {
     font-size: 20px;
     font-family: 'Montserrat';
     font-weight: 400;
-      
+
 }
 
 /*footer*/
 /*logo*/
 .logoFooter {
-    height: 20px; 
+    height: 20px;
     margin-top: 4px;
-        
+
 }
 
 /*texto footer*/
@@ -105,35 +105,36 @@ footer {
 
 /*VERSION DE TABLET*/
 @media (min-width:768px) {
-    .contenedor{
-        grid-template-areas: 
-        "header nav nav"
-        "sectionA sectionB sectionB"
-        "footer footer footer";
+    .contenedor {
+        grid-template-areas:
+            "header nav nav"
+            "sectionA sectionB sectionB"
+            "footer footer footer";
     }
+
     header {
         background-color: #AAAAAA;
     }
-    
-    
-    nav{
+
+
+    nav {
         grid-area: nav;
         text-align: right;
         background-color: #AAAAAA;
     }
-    
-    
-    .sectionA { 
+
+
+    .sectionA {
         background-color: #AAAAAA;
         grid-area: sectionA;
     }
-    
+
     .sectionB {
         background-color: #AAAAAA;
         grid-area: sectionB;
-                
+
     }
-    
+
     footer {
         background-color: rgb(158, 158, 158);
         grid-area: footer;
@@ -141,18 +142,18 @@ footer {
         position: absolute;
         bottom: 0;
         width: 100%;
-        
+
     }
-    
+
     /*isotipo*/
     .logo {
-        height: 40px; 
+        height: 40px;
         margin-left: 40px;
         margin-top: 20px;
     }
-    
+
     /*navegador*/
-     
+
     .nav-link {
         color: white;
         margin: 10px;
@@ -160,44 +161,44 @@ footer {
 
     /*imagen cuerpo*/
     .fondoInicio {
-        height: 450px; 
+        height: 450px;
         transform: translate(10px, 0px);
-        margin:0;
+        margin: 0;
         margin-top: 50px;
-        }
-    
+    }
+
     /*texto cuerpo*/
-    
+
     .textoInicio {
         padding-left: 11px;
         margin-left: 70px;
         margin-top: 200px;
-        color: white; 
+        color: white;
         border-left: solid 5px #202020;
         line-height: 40px;
     }
-    
-    .tituloInicio { 
-        font-size: 30px; 
+
+    .tituloInicio {
+        font-size: 30px;
         font-family: 'Montserrat', sans-serif;
         font-weight: 600;
-        }
-    
+    }
+
     .subtituloInicio {
         font-size: 20px;
         font-family: 'Montserrat';
         font-weight: 400;
-          
+
     }
-    
+
     /*footer*/
     /*logo*/
     .logoFooter {
-        height: 20px; 
+        height: 20px;
         margin-top: 7px;
-           
+
     }
-    
+
     /*texto footer*/
     .textoFooter {
         color: white;
@@ -205,35 +206,36 @@ footer {
         margin-top: 1px;
         font-size: 12px;
     }
-} 
+}
 
 /*VERSION DE ESCRITORIO*/
 @media (min-width:1024px) {
-    .contenedor{
-        grid-template-areas: 
-        "header nav nav"
-        "sectionA sectionB sectionB"
-        "footer footer footer";
+    .contenedor {
+        grid-template-areas:
+            "header nav nav"
+            "sectionA sectionB sectionB"
+            "footer footer footer";
     }
+
     header {
         background-color: #AAAAAA;
     }
-    
-    nav{
-        grid-area: nav;    
+
+    nav {
+        grid-area: nav;
     }
-    
-    .sectionA { 
+
+    .sectionA {
         background-color: #AAAAAA;
         grid-area: sectionA;
     }
-    
+
     .sectionB {
         background-color: #AAAAAA;
         grid-area: sectionB;
-                
+
     }
-    
+
     footer {
         background-color: rgb(158, 158, 158);
         grid-area: footer;
@@ -242,62 +244,62 @@ footer {
         bottom: 0;
         width: 100%;
     }
-    
+
     /*isotipo*/
     .logo {
-        height: 40px; 
+        height: 40px;
         margin-left: 40px;
         margin-top: 20px;
     }
-    
+
     /*navegador*/
-        
+
     .nav-link {
         color: white;
         margin: 10px;
     }
 
-            
+
     /*imagen cuerpo*/
     .fondoInicio {
-        height: 520px; 
+        height: 520px;
         transform: translate(10px);
-        margin:0;
-        }
-    
+        margin: 0;
+    }
+
     /*texto cuerpo*/
-    
+
     .textoInicio {
         padding-left: 11px;
         margin-left: 130px;
         margin-top: 200px;
-        color: white; 
+        color: white;
         border-left: solid 5px #202020;
         line-height: 40px;
     }
-    
-    .tituloInicio { 
-        font-size: 40px; 
+
+    .tituloInicio {
+        font-size: 40px;
         font-family: 'Montserrat', sans-serif;
         font-weight: 600;
-        }
-    
+    }
+
     .subtituloInicio {
         font-size: 25px;
         font-family: 'Montserrat';
         font-weight: 400;
-          
+
     }
-    
+
     /*footer*/
-    
+
     /*logo*/
     .logoFooter {
-        height: 20px; 
+        height: 20px;
         margin-top: 7px;
-            
+
     }
-    
+
     /*texto footer*/
     .textoFooter {
         color: white;
