@@ -28,16 +28,23 @@ nav {
 }
 
 
+
 .sectionA {
     background-color: #AAAAAA;
     grid-area: sectionA;
+    margin: 10px auto 10px auto;
 }
 
 .sectionB {
     background-color: #AAAAAA;
     grid-area: sectionB;
     text-align: center;
+}
 
+/*navegador*/
+.nav-link {
+    color: white;
+    margin: 10px;
 }
 
 footer {
@@ -59,7 +66,7 @@ footer {
 
 /*imagen cuerpo*/
 .fondoInicio {
-    height: 320px;
+    height: 380px;
     margin: 0;
 }
 
@@ -67,7 +74,7 @@ footer {
 .textoInicio {
     padding-left: 11px;
     margin-left: 20px;
-    margin-top: 60px;
+    margin-top: 5px;
     margin-bottom: 60px;
     color: white;
     border-left: solid 5px #202020;
@@ -112,70 +119,23 @@ footer {
             "footer footer footer";
     }
 
-    header {
-        background-color: #AAAAAA;
-    }
-
-
     nav {
         grid-area: nav;
         text-align: right;
         background-color: #AAAAAA;
     }
 
-
-    .sectionA {
-        background-color: #AAAAAA;
-        grid-area: sectionA;
-    }
-
-    .sectionB {
-        background-color: #AAAAAA;
-        grid-area: sectionB;
-
-    }
-
-    footer {
-        background-color: rgb(158, 158, 158);
-        grid-area: footer;
-        text-align: center;
-        position: absolute;
-        bottom: 0;
-        width: 100%;
-
-    }
-
-    /*isotipo*/
-    .logo {
-        height: 40px;
-        margin-left: 40px;
-        margin-top: 20px;
-    }
-
-    /*navegador*/
-
-    .nav-link {
-        color: white;
-        margin: 10px;
-    }
-
     /*imagen cuerpo*/
     .fondoInicio {
-        height: 450px;
-        transform: translate(10px, 0px);
-        margin: 0;
-        margin-top: 50px;
+        height: 500px;
+    
+        
     }
 
     /*texto cuerpo*/
-
     .textoInicio {
-        padding-left: 11px;
-        margin-left: 70px;
+        margin-left: 50px;
         margin-top: 200px;
-        color: white;
-        border-left: solid 5px #202020;
-        line-height: 40px;
     }
 
     .tituloInicio {
@@ -188,21 +148,16 @@ footer {
         font-size: 20px;
         font-family: 'Montserrat';
         font-weight: 400;
-
     }
 
     /*footer*/
     /*logo*/
-    .logoFooter {
-        height: 20px;
+    .logoFooter {       
         margin-top: 7px;
-
     }
 
     /*texto footer*/
-    .textoFooter {
-        color: white;
-        font-family: 'Montserrat';
+    .textoFooter {    
         margin-top: 1px;
         font-size: 12px;
     }
@@ -217,95 +172,38 @@ footer {
             "footer footer footer";
     }
 
-    header {
-        background-color: #AAAAAA;
-    }
-
-    nav {
-        grid-area: nav;
-    }
-
-    .sectionA {
-        background-color: #AAAAAA;
-        grid-area: sectionA;
-    }
-
-    .sectionB {
-        background-color: #AAAAAA;
-        grid-area: sectionB;
-
-    }
-
-    footer {
-        background-color: rgb(158, 158, 158);
-        grid-area: footer;
-        text-align: center;
-        position: absolute;
-        bottom: 0;
-        width: 100%;
-    }
-
-    /*isotipo*/
-    .logo {
-        height: 40px;
-        margin-left: 40px;
-        margin-top: 20px;
-    }
-
-    /*navegador*/
-
-    .nav-link {
-        color: white;
-        margin: 10px;
-    }
-
 
     /*imagen cuerpo*/
     .fondoInicio {
-        height: 520px;
-        transform: translate(10px);
+        height: 600px;
+        
         margin: 0;
     }
 
     /*texto cuerpo*/
-
     .textoInicio {
-        padding-left: 11px;
         margin-left: 130px;
         margin-top: 200px;
-        color: white;
-        border-left: solid 5px #202020;
-        line-height: 40px;
     }
 
     .tituloInicio {
         font-size: 40px;
-        font-family: 'Montserrat', sans-serif;
-        font-weight: 600;
     }
 
     .subtituloInicio {
         font-size: 25px;
-        font-family: 'Montserrat';
-        font-weight: 400;
-
     }
 
     /*footer*/
 
     /*logo*/
     .logoFooter {
-        height: 20px;
         margin-top: 7px;
-
     }
 
     /*texto footer*/
     .textoFooter {
-        color: white;
-        font-family: 'Montserrat';
         margin-top: 1px;
-        font-size: 12px;
     }
 
 }

@@ -2,16 +2,19 @@ body {
   height: 100%;
   margin: 0;
   background-color: #202020;
-
+  overflow-y: auto;
 }
 
 
-/*VERSION DE ESCRITORIO*/
+/*GRID AREA*/
+/*CELULAR*/
+
 .contenedor {
   display: grid;
   grid-template-areas:
     "header nav"
     "sectionA sectionA"
+    "sectionB sectionB"
     "footer footer";
 }
 
@@ -21,11 +24,15 @@ header {
 
 nav {
   grid-area: nav;
+  background-color: #202020;
 }
 
 .sectionA {
   background-color: #202020;
   grid-area: sectionA;
+
+
+
 }
 
 .sectionB {
@@ -34,12 +41,14 @@ nav {
 }
 
 footer {
-  background-color: #202020;
+  background-color: #2e2e2e;
   grid-area: footer;
   text-align: center;
+  position: relative;
   bottom: 0;
   width: 100%;
 }
+
 
 /*isotipo*/
 .logo {
@@ -49,108 +58,94 @@ footer {
 }
 
 /*navegador*/
-
 .nav-link {
   color: white;
   margin: 10px;
 }
 
+.navbar-toggler {
+  color: white;
+}
+
+.navbar-toggler-icon {
+  background-image: white;
+}
+
+.navbarNav {
+  color: white;
+}
 
 /*formulario*/
 
+
 .sectionA {
-  width: 460px;
+
+  width: 400px;
   height: auto;
-  margin: 80px auto;
+  margin: 30px auto;
   border-radius: 10px;
-  padding-top: 30px;
+  padding-top: 20px;
   padding-bottom: 20px;
   background-color: #fbfbfb;
-  padding-left: 30px;
+  padding-left: 25px;
+
 }
 
 
 input {
   background-color: #fbfbfb;
-  width: 408px;
-  height: 40px;
+  width: 348px;
+  height: 35px;
   border-radius: 5px;
   border-style: solid;
   border-width: 1px;
   border-color: #202020;
-  margin-top: 10px;
   padding-left: 10px;
-  margin-bottom: 20px;
 }
-
 
 textarea {
   background-color: #fbfbfb;
-  width: 405px;
-  height: 150px;
+  width: 348px;
+  height: 100px;
   border-radius: 5px;
   border-style: solid;
   border-width: 1px;
   border-color: #202020;
   margin-top: 10px;
   padding-left: 10px;
-  margin-bottom: 20px;
-  padding-top: 15px;
+  margin-bottom: 10px;
+  padding-top: 10px;
 }
 
 
-label {
-  display: block;
-  float: center;
-}
 
-
-button {
+.button-form {
   height: 45px;
   padding-left: 5px;
   padding-right: 5px;
-  margin-bottom: 20px;
-  margin-top: 10px;
+  margin-bottom: 10px;
+  margin-top: 5px;
   text-transform: uppercase;
   background-color: #202020;
   border-color: #202020;
   border-style: solid;
   border-radius: 10px;
-  width: 420px;
+  width: 350px;
   cursor: pointer;
 }
 
-
 button p {
   color: #fff;
+  margin-top: 5px;
 }
-
-
-span {
-  color: #202020;
-}
-
-
-.aviso {
-  font-size: 13px;
-  color: #0e0e0e;
-}
-
 
 h1 {
-  font-size: 39px;
+  font-size: 25px;
   text-align: letf;
-  padding-bottom: 20px;
+  padding-bottom: 10px;
   color: #202020;
+
 }
-
-
-h3 {
-  font-size: 16px;
-  padding-bottom: 30px;
-  color: #0e0e0e;
-}
-
 
 p {
   font-size: 14px;
@@ -158,39 +153,103 @@ p {
 }
 
 
-::-webkit-input-placeholder {
-  color: #a8a8a8;
+/*informacion de contacto*/
+.sectionB {
+  margin: 0px auto 20px auto;
+}
+
+.textoContacto {
+  margin-top: 40px;
+  color: white;
+  line-height: 50px;
+}
+
+.titulo {
+  font-size: 25px;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 600;
+}
+
+.subtitulo {
+  font-size: 15px;
+  font-family: 'Montserrat';
+  font-weight: 400;
+  margin-left: 35px;
+  margin-top: -48px;
 }
 
 
-::-webkit-textarea-placeholder {
-  color: #a8a8a8;
-}
-
-
-.formulario input:focus {
-  outline: 0;
-  border: 1px solid #AAAAAA;
-}
-
-
-.formulario textarea:focus {
-  outline: 0;
-  border: 1px solid #AAAAAA;
-}
 
 /*footer*/
+
+
 
 /*logo*/
 .logoFooter {
   height: 20px;
-  margin-top: 7px;
+  margin-top: 4px;
 }
 
 /*texto footer*/
 .textoFooter {
   color: white;
   font-family: 'Montserrat';
-  margin-top: 1px;
+  margin-top: 5px;
   font-size: 12px;
+}
+
+/*VERSION DE TABLET*/
+@media (min-width:768px) {
+  .contenedor {
+    grid-template-areas:
+      "header nav nav"
+      "sectionA sectionB sectionB"
+      "footer footer footer";
+  }
+
+  /*footer*/
+  footer {
+    position: absolute;
+  }
+
+  /*logo*/
+  .logoFooter {
+    margin-top: 7px;
+  }
+
+  /*texto footer*/
+  .textoFooter {
+    margin-top: 1px;
+  }
+
+  /*navegador*/
+  .navbar-toggle {
+    color: white;
+  }
+
+}
+
+/*VERSION DE ESCRITORIO*/
+@media (min-width:1024px) {
+  .contenedor {
+    grid-template-areas:
+      "header nav nav"
+      "sectionA sectionB sectionB"
+      "footer footer footer";
+  }
+
+
+
+  /*footer*/
+
+  /*logo*/
+  .logoFooter {
+    margin-top: 7px;
+  }
+
+  /*texto footer*/
+  .textoFooter {
+    margin-top: 1px;
+  }
+
 }
