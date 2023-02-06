@@ -13,32 +13,33 @@
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
     <!-- link favicon -->
-    <link rel="shortcut icon" href="imagenes/favicon.png" type="favicon">
+    <link rel="shortcut icon" href="../imagenes/favicon.png" type="favicon">
 
     <!-- CSS only BOOSTRAP-->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
 
     <!-- link CSS -->
-    <link rel="stylesheet" type="text/css" href="CSS/sobreMi.css">
+    <link rel="stylesheet" type="text/css" href="../CSS/sobreMi.css">
 </head>
 
-<body class="contenedor">
+<body id="sobreMi">
     <header>
-        <img class="logo" src="imagenes/logo.png">
+        <a href="../index.html"> <img class="logo" src="../imagenes/logo.png"></a>
     </header>
 
-    <nav class="navbar navbar-expand-lg ms-auto">
+    <!-- incia nav -->
+    <nav class="navbar navbar-expand-lg ms-auto" id="botonera">
         <div class="container">
 
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <img class= "boton-nav" src="../imagenes/boton-nav.svg" alt="">
+      </button>
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav">
                     <li class="nav-item">
-                        <a class="nav-link" href="index.html">Inicio</a>
+                        <a class="nav-link" href="../index.html">Inicio</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="sobreMi.html">Sobre Mi</a>
@@ -56,7 +57,7 @@
             </div>
         </div>
     </nav>
-
+<!-- end nav -->
 
     <main class="sectionA">
         <div data-aos="fade-up">
@@ -71,13 +72,12 @@
     </main>
 
     <section class="sectionB">
-        <div data-aos="fade-up"><img class="fondoInicio"
-                src="imagenes/fondo_sobreMi.png"></div>
+        <div data-aos="fade-up"><img class="fondoInicio" src="../imagenes/fondo_sobreMi.png"></div>
     </section>
 
 
     <footer>
-        <img class="logoFooter" src="imagenes/logo.png">
+        <img class="logoFooter" src="../imagenes/logo.png">
         <p class="textoFooter">Todos los derechos reservados</p>
     </footer>
 

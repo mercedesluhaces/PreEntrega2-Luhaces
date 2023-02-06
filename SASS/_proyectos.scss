@@ -1,0 +1,192 @@
+/*GRID AREA*/
+/*ESCRITORIO*/
+#proyectos {
+    height: 100%;
+    margin: 0;
+    background-color: #202020;
+    overflow-y: auto;
+    display: grid;
+    grid-template-areas:
+        "header nav nav"
+        "main main main"
+        "footer footer footer";
+
+    header {
+        background-color: #202020;
+        grid-area: header;
+
+        .logo {
+            height: 40px;
+            margin-left: 40px;
+            margin-top: 20px;
+        }
+    }
+
+    nav {
+        grid-area: nav;
+
+        a {
+            color: white; 
+            margin: 10px;
+            font-size: 'Montserrat';
+        }
+        
+        a:hover{
+            color:#AAAAAA;
+        }
+
+        .boton-nav {
+            height: 20px;
+            width: 20px;
+        }
+    }
+
+    main {
+        background-color: #202020;
+        grid-area: main;
+
+        h1 {
+            font-size: 25px;
+            text-align: center;
+            padding: 20px 0;
+            font-family: 'Montserrat', sans-serif;
+            margin: 20px 0;
+            color: white;
+        }
+
+        .galeria1 {
+            margin: 20px;
+            /*display flex*/
+            display: flex;
+            flex: 1;
+            flex-direction: row;
+            justify-content: space-evenly;
+
+            figure {
+                text-align: center;
+
+                img {
+                    border-radius: 5px;
+                    width: 250px;
+                    transition: transform .2s;
+                }
+                img:hover {
+                    transform: scale(1.5);
+                }
+            }
+        }
+        
+        /*diseño de logos*/
+        h2 {
+            font-size: 25px;
+            text-align: center;
+            padding: 20px 0;
+            font-family: 'Montserrat', sans-serif;
+            margin: 20px 0;
+            color: white;
+        }
+
+        .galeria2 {
+            margin: 20px;
+            /*display flex*/
+            display: flex;
+            flex: 2;
+            flex-direction: row;
+            justify-content: space-evenly;
+
+            figure {
+                text-align: center;
+
+                img {
+                    border-radius: 5px;
+                    width: 250px;
+                    transition: transform .2s;
+                }
+
+                img:hover {
+                    transform: scale(1.5);
+                }
+            }
+
+
+        }
+    }
+
+    footer {
+        background-color: #2e2e2e;
+        grid-area: footer;
+        text-align: center;
+        position: relative;
+        bottom: 0;
+        width: 100%;
+
+        .logoFooter {
+            height: 20px;
+            margin-top: 7px;
+        }
+
+        .textoFooter {
+            color: white;
+            font-family: 'Montserrat';
+            margin-top: 1px;
+            font-size: 12px;
+        }
+    }
+
+    /*VERSION DE TABLET*/
+    @media (max-width:1100px) {
+        grid-template-areas:
+            "header nav nav"
+            "main main main"
+            "footer footer footer";
+        
+    
+        .galeria1 {
+            flex-direction: column;
+            align-items: center;
+
+            .img {
+            width: 400px;
+            }
+        }
+    
+        .galeria2 {
+            flex-direction: column;
+            align-items: center;
+
+            .img {
+            width: 400px;
+            }
+        }
+    
+    }
+
+    /*VERSION DE CELULAR*/
+    @media (max-width:600px) {
+        grid-template-areas:
+            "header nav nav"
+            "main main main"
+            "footer footer footer";
+    
+
+        .galeria1 {
+            flex-direction: column;
+            align-items: center;
+
+            .img {
+            width: 280px;
+            }
+        }
+
+        .galeria2 {
+            flex-direction: column;
+            align-items: center;
+
+            .img {
+                width: 280px;
+            }
+        }
+
+        
+    }
+}

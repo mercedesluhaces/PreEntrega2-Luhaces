@@ -1,0 +1,205 @@
+#contacto {
+    height: 100%;
+    margin: 0;
+    background-color: $third-color;
+    overflow-y: auto;
+    display: grid;
+    grid-template-areas:
+      "header nav"
+      "sectionA sectionA"
+      "sectionB sectionB"
+      "footer footer";
+
+    header {
+    background-color: $third-color;
+    grid-area: header;
+
+        .logo {
+            height: 40px;
+            margin-left: 40px;
+            margin-top: 20px;
+        }
+    }
+
+    nav {
+        grid-area: nav;
+        background-color: $third-color;
+
+        a {
+            color: white; 
+            margin: 10px;
+            font-size: $text-font;
+        }
+
+        a:hover{
+            color:$principal-color;
+        }
+
+        .boton-nav {
+            height: 20px;
+            width: 20px;
+        }
+    }
+
+    .sectionA {
+        background-color: $third-color;
+        grid-area: sectionA;
+        width: 400px;
+        height: auto;
+        margin: 30px auto;
+        border-radius: 10px;
+        padding-top: 20px;
+        padding-bottom: 20px;
+        background-color: #fbfbfb;
+        padding-left: 25px;
+
+        h1 {
+            font-size: 25px;
+            text-align: letf;
+            padding-bottom: 10px;
+            color: $third-color;
+        }
+        p {
+            font-size: 14px;
+            color: #0e0e0e;
+          
+            input {
+                background-color: #fbfbfb;
+                width: 348px;
+                height: 35px;
+                border-radius: 5px;
+                border-style: solid;
+                border-width: 1px;
+                border-color: $third-color;
+                padding-left: 10px;
+            }
+        
+            textarea {
+                background-color: #fbfbfb;
+                width: 348px;
+                height: 100px;
+                border-radius: 5px;
+                border-style: solid;
+                border-width: 1px;
+                border-color: $third-color;
+                margin-top: 10px;
+                padding-left: 10px;
+                margin-bottom: 10px;
+                padding-top: 10px;
+            }
+        }
+
+        .button-form {
+            height: 45px;
+            padding-left: 5px;
+            padding-right: 5px;
+            margin-bottom: 10px;
+            margin-top: 5px;
+            text-transform: uppercase;
+            background-color: $third-color;
+            border-color: $third-color;
+            border-style: solid;
+            border-radius: 10px;
+            width: 350px;
+            cursor: pointer;
+
+            p {
+                color: #fff;
+                margin-top: 5px;
+            }
+        }
+    }
+
+    .sectionB {
+        background-color: $third-color;
+        grid-area: sectionB;
+        margin: 0px auto 20px auto;
+
+        .textoContacto {
+            margin-top: 40px;
+            color: $second-color;
+            line-height: 50px;
+
+            .titulo {
+                font-size: 25px;
+                font-family: $title-font;
+                font-weight: 600;
+            }
+
+            .subtitulo {
+                font-size: 15px;
+                font-family: $text-font;
+                font-weight: 400;
+                margin-left: 35px;
+                margin-top: -48px;
+            }
+        }
+    }
+
+    footer {
+        background-color: #2e2e2e;
+        grid-area: footer;
+        text-align: center;
+        position: relative;
+        bottom: 0;
+        width: 100%;
+
+        .logoFooter {
+            height: 20px;
+            margin-top: 4px;
+        }
+
+        .textoFooter {
+            color: $second-color;
+            font-family: $text-font;
+            margin-top: 5px;
+            font-size: 12px;
+        }
+    }
+
+    /*VERSION DE TABLET*/
+    @media (min-width:768px) {
+    grid-template-areas:
+        "header nav nav"
+        "sectionA sectionB sectionB"
+        "footer footer footer";
+    
+  
+    /*footer*/
+    footer {
+      position: absolute;
+
+        .logoFooter {
+        margin-top: 7px;
+        }
+        
+        .textoFooter {
+        margin-top: 1px;
+        }
+    }
+
+    /*navegador*/
+    .navbar-toggle {
+      color: $second-color;
+    }
+  
+  }
+
+  /*VERSION DE ESCRITORIO*/
+    @media (min-width:1024px) {
+    grid-template-areas:
+        "header nav nav"
+        "sectionA sectionB sectionB"
+        "footer footer footer";
+    
+        footer {
+            .logoFooter {
+            margin-top: 7px;
+            }
+        
+            .textoFooter {
+            margin-top: 1px;
+            }
+        }
+    }
+}

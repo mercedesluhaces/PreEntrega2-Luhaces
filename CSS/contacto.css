@@ -1,15 +1,11 @@
-body {
+/*GRID AREA*/
+/*CELULAR*/
+
+#contacto {
   height: 100%;
   margin: 0;
   background-color: #202020;
   overflow-y: auto;
-}
-
-
-/*GRID AREA*/
-/*CELULAR*/
-
-.contenedor {
   display: grid;
   grid-template-areas:
     "header nav"
@@ -30,9 +26,6 @@ nav {
 .sectionA {
   background-color: #202020;
   grid-area: sectionA;
-
-
-
 }
 
 .sectionB {
@@ -58,28 +51,23 @@ footer {
 }
 
 /*navegador*/
-.nav-link {
-  color: white;
+#botonera ul li a {
+  color: white; 
   margin: 10px;
+  font-size: 'Montserrat';
 }
 
-.navbar-toggler {
-  color: white;
+#botonera ul li a:hover{
+  color:#AAAAAA;
 }
 
-.navbar-toggler-icon {
-  background-image: white;
-}
-
-.navbarNav {
-  color: white;
+.boton-nav {
+  height: 20px;
+  width: 20px;
 }
 
 /*formulario*/
-
-
 .sectionA {
-
   width: 400px;
   height: auto;
   margin: 30px auto;
@@ -88,7 +76,6 @@ footer {
   padding-bottom: 20px;
   background-color: #fbfbfb;
   padding-left: 25px;
-
 }
 
 
@@ -117,8 +104,6 @@ textarea {
   padding-top: 10px;
 }
 
-
-
 .button-form {
   height: 45px;
   padding-left: 5px;
@@ -144,7 +129,6 @@ h1 {
   text-align: letf;
   padding-bottom: 10px;
   color: #202020;
-
 }
 
 p {
@@ -178,12 +162,7 @@ p {
   margin-top: -48px;
 }
 
-
-
 /*footer*/
-
-
-
 /*logo*/
 .logoFooter {
   height: 20px;
@@ -200,7 +179,7 @@ p {
 
 /*VERSION DE TABLET*/
 @media (min-width:768px) {
-  .contenedor {
+  #contacto {
     grid-template-areas:
       "header nav nav"
       "sectionA sectionB sectionB"
@@ -231,17 +210,14 @@ p {
 
 /*VERSION DE ESCRITORIO*/
 @media (min-width:1024px) {
-  .contenedor {
+  #contacto {
     grid-template-areas:
       "header nav nav"
       "sectionA sectionB sectionB"
       "footer footer footer";
   }
 
-
-
   /*footer*/
-
   /*logo*/
   .logoFooter {
     margin-top: 7px;
@@ -251,5 +227,4 @@ p {
   .textoFooter {
     margin-top: 1px;
   }
-
 }

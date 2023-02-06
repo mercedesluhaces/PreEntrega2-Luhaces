@@ -1,11 +1,8 @@
-body {
+/*VERSION DE ESCRITORIO*/
+#noticias {
   height: 100%;
   margin: 0;
   background-color: #AAAAAA;
-}
-
-/*VERSION DE ESCRITORIO*/
-.contenedor {
   display: grid;
   grid-template-areas:
     "header nav nav"
@@ -15,6 +12,7 @@ body {
 
 header {
   background-color: #AAAAAA;
+  grid-area: header;
 }
 
 nav {
@@ -44,20 +42,22 @@ footer {
 }
 
 /*navegador*/
-
 .nav-link {
   color: white;
   margin: 10px;
 }
 
+.boton-nav {
+  height: 20px;
+  width: 20px;
+}
+
 /*noticias*/
-
-
 .noticias1 {
   margin: 10px;
   /*display flex*/
   display: flex;
- margin-top: 20px;
+  margin-top: 20px;
   flex-direction: row;
   justify-content: space-evenly;
 }
@@ -67,7 +67,6 @@ footer {
   background-color: #e7e7e7;
   width: 350px;
   border-radius: 5px;
-  
 }
 
 .noticias1 figure img {
@@ -75,34 +74,29 @@ footer {
   width: 350px;
 }
 
-
 .noticias1 figure figcaption {
   font-size: 17px;
-  color: #202020 ;
+  color: #202020;
   margin: 15px;
   text-align: left;
   font-family: 'Montserrat', sans-serif;
   font-weight: 600;
-  
 }
 
 .noticias1 figure p {
   font-size: 13px;
-  color: #202020 ;
+  color: #202020;
   font-weight: 400;
   text-align: left;
   font-family: 'Montserrat';
-  
 }
 
 .button {
   font-size: 13px;
-  
   color: #202020;
 }
 
 /* footer */
-
 /*logo*/
 .logoFooter {
   height: 20px;
@@ -119,7 +113,7 @@ footer {
 
 /*VERSION DE TABLET*/
 @media (max-width:1100px) {
-  .contenedor {
+  #noticias {
     display: grid;
     grid-template-areas:
       "header nav nav"
@@ -136,7 +130,7 @@ footer {
   .noticias1 figure {
     width: 650px;
   }
-  
+
   .noticias1 figure img {
     width: 650px;
   }
@@ -150,7 +144,7 @@ footer {
 
 /*VERSION DE CELULAR*/
 @media (max-width:700px) {
-  .contenedor {
+  #noticias {
     display: grid;
     grid-template-areas:
       "header nav nav"
@@ -162,10 +156,8 @@ footer {
   .noticias1 figure {
     width: 350px;
   }
-  
+
   .noticias1 figure img {
     width: 350px;
   }
-
-
 }

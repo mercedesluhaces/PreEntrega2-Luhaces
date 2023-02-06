@@ -1,15 +1,12 @@
-body {
-    height: 100%;
-    margin: 0;
-    background-color: #202020;
-    overflow-y: hidden;
-}
-
 
 /*GRID AREA*/
 /*CELULAR*/
 
-.contenedor {
+#sobreMi {
+    height: 100%;
+    margin: 0;
+    background-color: #202020;
+    overflow-y: hidden;
     display: grid;
     grid-template-areas:
         "header nav"
@@ -31,7 +28,6 @@ nav {
     background-color: #202020;
     grid-area: sectionA;
     margin: auto;
-    
 }
 
 .sectionB {
@@ -67,7 +63,7 @@ footer {
 .textoInicio {
     padding-left: 11px;
     margin-left: 20px;
-    margin-top: 60px;
+    margin-top: 40px;
     margin-bottom: 40px;
     color: white;
     border-left: solid 5px #202020;
@@ -90,25 +86,22 @@ footer {
 }
 
 /*navegador*/
-.nav-link {
-    color: white;
+#botonera ul li a {
+    color: white; 
     margin: 10px;
+    font-size: 'Montserrat';
 }
 
-.navbar-toggler {
-    color: white;
+#botonera ul li a:hover{
+    color:#AAAAAA;
 }
 
-.navbar-toggler-icon {
-    background-image: white;
-}
-
-.navbarNav {
-    color: white;
+.boton-nav {
+    height: 20px;
+    width: 20px;
 }
 
 /*footer*/
-
 /*logo*/
 .logoFooter {
     height: 20px;
@@ -125,7 +118,7 @@ footer {
 
 /*VERSION DE TABLET*/
 @media (min-width:768px) {
-    .contenedor {
+    #sobreMi {
         grid-template-areas:
             "header nav nav"
             "sectionA sectionB sectionB"
@@ -169,7 +162,7 @@ footer {
     }
 
     /*navegador*/
-    .navbar-toggle{
+    .navbar-toggle {
         color: white;
     }
 
@@ -177,7 +170,7 @@ footer {
 
 /*VERSION DE ESCRITORIO*/
 @media (min-width:1024px) {
-    .contenedor {
+    #sobreMi {
         grid-template-areas:
             "header nav nav"
             "sectionA sectionB sectionB"

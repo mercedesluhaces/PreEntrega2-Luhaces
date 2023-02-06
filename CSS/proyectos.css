@@ -1,15 +1,10 @@
-body {
+/*GRID AREA*/
+/*ESCRITORIO*/
+#proyectos {
     height: 100%;
     margin: 0;
     background-color: #202020;
     overflow-y: auto;
-}
-
-
-/*GRID AREA*/
-/*ESCRITORIO*/
-
-.contenedor {
     display: grid;
     grid-template-areas:
         "header nav nav"
@@ -51,9 +46,19 @@ footer {
 }
 
 /*navegador*/
-.nav-link {
-    color: white;
+#botonera ul li a {
+    color: white; 
     margin: 10px;
+    font-size: 'Montserrat';
+}
+
+#botonera ul li a:hover{
+    color:#AAAAAA;
+}
+
+.boton-nav {
+    height: 20px;
+    width: 20px;
 }
 
 /*Estilos de la galeria*/
@@ -141,7 +146,7 @@ h2 {
 
 /*VERSION DE TABLET*/
 @media (max-width:1100px) {
-    .contenedor {
+    #proyectos {
         grid-template-areas:
             "header nav nav"
             "main main main"
@@ -172,7 +177,7 @@ h2 {
 
 /*VERSION DE CELULAR*/
 @media (max-width:600px) {
-    .contenedor {
+    #proyectos {
         grid-template-areas:
             "header nav nav"
             "main main main"
@@ -187,6 +192,7 @@ h2 {
     .galeria1 figure img {
         width: 280px;
     }
+
     .galeria2 {
         flex-direction: column;
         align-items: center;
