@@ -1,0 +1,20 @@
+@mixin media ($breakpoint) {
+    @if $breakpoint == mobile {
+        @media (min-width: 576px) { @content; }
+    }
+
+    @if $breakpoint == tablet {
+        @media (min-width: 768px) { @content; }
+    }
+
+    @if $breakpoint == desktop {
+        @media (min-width: 1024px) { @content; }
+    }
+}
+
+//extens
+.logo {
+    height: 40px;
+    margin-left: 40px;
+    margin-top: 20px;
+}
