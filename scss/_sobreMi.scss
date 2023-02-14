@@ -1,0 +1,211 @@
+#sobreMi {
+    height: 100%;
+    margin: 0;
+    background-color: $third-color;
+    overflow-y: auto;
+    display: grid;
+    grid-template-areas:
+        "header nav"
+        "sectionB sectionB"
+        "sectionA sectionA"
+        "footer footer";
+
+
+    header {
+        background-color: $third-color;;
+
+        /*isotipo*/
+        .logo {
+            @extend .logo
+        }
+    }
+
+    nav {
+        grid-area: nav;
+        background-color: $third-color;
+
+        a {
+            color: $second-color; 
+            margin: 10px;
+            font-size: $text-font;
+        }
+        
+        a:hover{
+            color:$principal-color;
+        }
+
+        .boton-nav {
+            height: 20px;
+            width: 20px;
+        }
+    }
+
+    .sectionA {
+        background-color: $third-color;;
+        grid-area: sectionA;
+        margin: auto;
+
+        /*texto cuerpo*/
+        .textoInicio {
+            padding-left: 11px;
+            margin-left: 20px;
+            margin-top: 40px;
+            margin-bottom: 40px;
+            color: $second-color;
+            border-left: solid 5px $third-color;;
+            line-height: 60px;
+
+            .tituloInicio {
+                font-size: 20px;
+                font-family: $title-font;
+                font-weight: 600;
+                line-height: 30px;
+            }
+            
+            .subtituloInicio {
+                font-size: 12px;
+                font-family: $text-font;
+                font-weight: 400;
+                line-height: 20px;
+                padding-right: 20px;
+            }
+        }
+    }
+
+    .sectionB {
+        background-color: $third-color;;
+        grid-area: sectionB;
+        text-align: center;
+
+        /*imagen cuerpo*/
+        .fondoInicio {
+            height: 320px;
+            margin: auto;
+        }
+    }
+
+    footer {
+        @extend footer;
+        position: relative;
+        background-color: #2e2e2e;
+
+        /*logo*/
+        .logoFooter {
+            height: 20px;
+            margin-top: 4px;
+        }
+
+        /*texto footer*/
+        .textoFooter {
+            color: $second-color;
+            font-family: $text-font;
+            margin-top: 5px;
+            font-size: 12px;
+        }
+    }
+
+    //tablet
+    @include media (tablet) { 
+
+       grid-template-areas:
+            "header nav nav"
+            "sectionA sectionB sectionB"
+            "footer footer footer";
+            
+        /*navegador*/
+        .navbar-toggle {
+            color: $second-color;
+        }
+    
+        /*seccionB*/
+        .sectionB {
+            .fondoInicio {
+                height: 500px;
+                margin-top: 70px;
+                transform: translate(-5px);
+                
+            }
+        }    
+
+        /*seccionA*/
+        .sectionA {
+            .textoInicio {
+                margin-left: 50px;
+                margin-top: 70px;
+
+                .tituloInicio {
+                    font-size: 25px;
+                    line-height: 40px;
+                    margin-bottom: 20px;
+                }
+            
+                .subtituloInicio {
+                    font-size: 14px;
+                    line-height: 30px;
+                    padding-right: 50px;
+                }
+            }
+        }
+
+        /*footer*/
+        footer {
+            .logoFooter {
+                margin-top: 7px;
+            }
+
+            .textoFooter {
+                margin-top: 1px;
+            }
+        }
+        
+    }
+
+    //escritorio
+    @include media (desktop) {
+            grid-template-areas:
+                "header nav nav"
+                "sectionA sectionB sectionB"
+                "footer footer footer";
+    
+    
+        /*seccionB*/
+        .sectionB {
+            .fondoInicio {
+                height: 500px;
+                transform: translate(-5px);
+                margin-top: 40px;
+            }
+        }    
+    
+        /*seccionA*/
+        .sectionA {
+            .textoInicio {
+                margin-left: 80px;
+                margin-top: 40px;
+            
+                .tituloInicio {
+                    font-size: 30px;
+                    line-height: 40px;
+                    margin-bottom: 20px;
+                }
+            
+                .subtituloInicio {
+                    font-size: 15px;
+                    line-height: 30px;
+                    padding-right: 100px;
+                }
+            }
+        }
+
+        /*footer*/
+        footer {
+            .logoFooter {
+                margin-top: 7px;
+            }
+        
+            .textoFooter {
+                margin-top: 1px;
+            }
+        }
+    }
+}

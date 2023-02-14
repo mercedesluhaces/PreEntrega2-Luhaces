@@ -1,0 +1,201 @@
+/*GRID AREA*/
+/*ESCRITORIO*/
+#proyectos {
+    height: 100%;
+    margin: 0;
+    background-color: $third-color;
+    overflow-y: auto;
+    display: grid;
+    grid-template-areas:
+        "header nav nav"
+        "main main main"
+        "footer footer footer";
+
+    header {
+        background-color: $third-color;
+        grid-area: header;
+
+        .logo {
+            @extend .logo
+        }
+    }
+
+    nav {
+        grid-area: nav;
+        background-color: $third-color;
+
+        a {
+            color: $second-color; 
+            margin: 10px;
+            font-size: $text-font;
+        }
+        
+        a:hover{
+            color:$principal-color;
+        }
+
+        .boton-nav {
+            height: 20px;
+            width: 20px;
+        }
+    }
+
+    main {
+        background-color: $third-color;
+        grid-area: main;
+
+        h1 {
+            font-size: 25px;
+            text-align: center;
+            padding: 20px 0;
+            font-family: $title-font;
+            margin: 20px 0;
+            color: $second-color;
+        }
+
+        .galeria1 {
+            margin: 20px;
+            /*display flex*/
+            display: flex;
+            flex: 1;
+            flex-direction: row;
+            justify-content: space-evenly;
+
+            figure {
+                text-align: center;
+
+                img {
+                    border-radius: 5px;
+                    width: 250px;
+                    transition: transform .2s;
+                }
+                img:hover {
+                    transform: scale(1.5);
+                }
+            }
+        }
+        
+        /*diseño de logos*/
+        h2 {
+            font-size: 25px;
+            text-align: center;
+            padding: 20px 0;
+            font-family: $title-font;
+            margin: 20px 0;
+            color: $second-color;
+        }
+
+        .galeria2 {
+            margin: 20px;
+            /*display flex*/
+            display: flex;
+            flex: 2;
+            flex-direction: row;
+            justify-content: space-evenly;
+
+            figure {
+                text-align: center;
+
+                img {
+                    border-radius: 5px;
+                    width: 250px;
+                    transition: transform .2s;
+                }
+
+                img:hover {
+                    transform: scale(1.5);
+                }
+            }
+
+
+        }
+    }
+
+    footer {
+        background-color: #2e2e2e;
+        grid-area: footer;
+        text-align: center;
+        position: relative;
+        bottom: 0;
+        width: 100%;
+
+        .logoFooter {
+            height: 20px;
+            margin-top: 7px;
+        }
+
+        .textoFooter {
+            color: $second-color;
+            font-family: $text-font;
+            margin-top: 1px;
+            font-size: 12px;
+        }
+    }
+
+    /*VERSION DE TABLET*/
+    @media (max-width:1100px) {
+        grid-template-areas:
+            "header nav nav"
+            "main main main"
+            "footer footer footer";
+        
+    
+        main {
+            .galeria1 {
+                flex-direction: column;
+                align-items: center;
+
+                figure {
+                    img {
+                    width: 400px;
+                    }
+                }
+            }
+        
+            .galeria2 {
+                flex-direction: column;
+                align-items: center;
+
+                figure {
+                    img {
+                    width: 400px;
+                    }
+                }  
+            } 
+        }
+    
+    }
+
+    /*VERSION DE CELULAR*/
+    @media (max-width:600px) {
+        grid-template-areas:
+            "header nav nav"
+            "main main main"
+            "footer footer footer";
+    
+        main {
+            .galeria1 {
+                flex-direction: column;
+                align-items: center;
+
+                figure {
+                    img {
+                    width: 280px;
+                    }
+                }
+            }
+
+            .galeria2 {
+                flex-direction: column;
+                align-items: center;
+
+                figure {
+                    img {
+                        width: 280px;
+                    }
+                }
+            }
+        }
+        
+    }
+}
