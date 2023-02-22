@@ -12,7 +12,8 @@
 
 
     header {
-        background-color: $third-color;;
+        background-color: $third-color;
+        ;
 
         /*isotipo*/
         .logo {
@@ -25,13 +26,13 @@
         background-color: $third-color;
 
         a {
-            color: $second-color; 
+            color: $second-color;
             margin: 10px;
             font-size: $text-font;
         }
-        
-        a:hover{
-            color:$principal-color;
+
+        a:hover {
+            color: $principal-color;
         }
 
         .boton-nav {
@@ -41,7 +42,8 @@
     }
 
     .sectionA {
-        background-color: $third-color;;
+        background-color: $third-color;
+        ;
         grid-area: sectionA;
         margin: auto;
 
@@ -52,7 +54,8 @@
             margin-top: 40px;
             margin-bottom: 40px;
             color: $second-color;
-            border-left: solid 5px $third-color;;
+            border-left: solid 5px $third-color;
+            ;
             line-height: 60px;
 
             .tituloInicio {
@@ -61,7 +64,7 @@
                 font-weight: 600;
                 line-height: 30px;
             }
-            
+
             .subtituloInicio {
                 font-size: 12px;
                 font-family: $text-font;
@@ -73,7 +76,8 @@
     }
 
     .sectionB {
-        background-color: $third-color;;
+        background-color: $third-color;
+        ;
         grid-area: sectionB;
         text-align: center;
 
@@ -105,27 +109,27 @@
     }
 
     //tablet
-    @include media (tablet) { 
+    @include media (tablet) {
 
-       grid-template-areas:
+        grid-template-areas:
             "header nav nav"
             "sectionA sectionB sectionB"
             "footer footer footer";
-            
+
         /*navegador*/
         .navbar-toggle {
             color: $second-color;
         }
-    
+
         /*seccionB*/
         .sectionB {
             .fondoInicio {
                 height: 500px;
                 margin-top: 70px;
                 transform: translate(-5px);
-                
+
             }
-        }    
+        }
 
         /*seccionA*/
         .sectionA {
@@ -138,7 +142,7 @@
                     line-height: 40px;
                     margin-bottom: 20px;
                 }
-            
+
                 .subtituloInicio {
                     font-size: 14px;
                     line-height: 30px;
@@ -157,17 +161,17 @@
                 margin-top: 1px;
             }
         }
-        
+
     }
 
     //escritorio
     @include media (desktop) {
-            grid-template-areas:
-                "header nav nav"
-                "sectionA sectionB sectionB"
-                "footer footer footer";
-    
-    
+        grid-template-areas:
+            "header nav nav"
+            "sectionA sectionB sectionB"
+            "footer footer footer";
+
+
         /*seccionB*/
         .sectionB {
             .fondoInicio {
@@ -175,20 +179,20 @@
                 transform: translate(-5px);
                 margin-top: 40px;
             }
-        }    
-    
+        }
+
         /*seccionA*/
         .sectionA {
             .textoInicio {
                 margin-left: 80px;
                 margin-top: 40px;
-            
+
                 .tituloInicio {
                     font-size: 30px;
                     line-height: 40px;
                     margin-bottom: 20px;
                 }
-            
+
                 .subtituloInicio {
                     font-size: 15px;
                     line-height: 30px;
@@ -202,7 +206,7 @@
             .logoFooter {
                 margin-top: 7px;
             }
-        
+
             .textoFooter {
                 margin-top: 1px;
             }

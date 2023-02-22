@@ -1,15 +1,21 @@
 //MIXINS
 @mixin media ($breakpoint) {
-    @if $breakpoint == mobile {
-        @media (min-width: 576px) { @content; }
+    @if $breakpoint ==mobile {
+        @media (min-width: 576px) {
+            @content;
+        }
     }
 
-    @if $breakpoint == tablet {
-        @media (min-width: 768px) { @content; }
+    @if $breakpoint ==tablet {
+        @media (min-width: 768px) {
+            @content;
+        }
     }
 
-    @if $breakpoint == desktop {
-        @media (min-width: 1024px) { @content; }
+    @if $breakpoint ==desktop {
+        @media (min-width: 1024px) {
+            @content;
+        }
     }
 }
 
@@ -29,4 +35,3 @@ footer {
     bottom: 0;
     width: 100%;
 }
-

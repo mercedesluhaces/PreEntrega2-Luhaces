@@ -32,8 +32,8 @@
             width: 20px;
         }
 
-        a:hover{
-            color:$third-color;
+        a:hover {
+            color: $third-color;
         }
     }
 
@@ -112,7 +112,7 @@
 
 
         /*noticias*/
-        main{
+        main {
             .noticias1 {
                 flex-direction: column;
                 align-items: center;
@@ -144,14 +144,13 @@
 
         /*noticias*/
         main {
-            .noticias1 
-                figure {
-                    width: 350px;
+            .noticias1 figure {
+                width: 350px;
 
-                    img {
-                        width: 350px;
-                    }
+                img {
+                    width: 350px;
                 }
             }
         }
+    }
 }

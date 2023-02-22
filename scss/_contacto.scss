@@ -5,14 +5,14 @@
     overflow-y: auto;
     display: grid;
     grid-template-areas:
-      "header nav"
-      "sectionA sectionA"
-      "sectionB sectionB"
-      "footer footer";
+        "header nav"
+        "sectionA sectionA"
+        "sectionB sectionB"
+        "footer footer";
 
     header {
-    background-color: $third-color;
-    grid-area: header;
+        background-color: $third-color;
+        grid-area: header;
 
         .logo {
             height: 40px;
@@ -26,13 +26,13 @@
         background-color: $third-color;
 
         a {
-            color: $second-color; 
+            color: $second-color;
             margin: 10px;
             font-size: $text-font;
         }
 
-        a:hover{
-            color:$principal-color;
+        a:hover {
+            color: $principal-color;
         }
 
         .boton-nav {
@@ -59,10 +59,11 @@
             padding-bottom: 10px;
             color: $third-color;
         }
+
         p {
             font-size: 14px;
             color: $third-color;
-          
+
             input {
                 background-color: $second-color;
                 width: 348px;
@@ -73,7 +74,7 @@
                 border-color: $third-color;
                 padding-left: 10px;
             }
-        
+
             textarea {
                 background-color: $second-color;
                 width: 348px;
@@ -132,7 +133,19 @@
                 font-weight: 400;
                 margin-left: 35px;
                 margin-top: -48px;
+                text-decoration: none;
+                color: $second-color;
+
+                a {
+                    font-size: 15px;
+                    font-family: $text-font;
+                    font-weight: 400;
+                    margin-top: -48px;
+                    text-decoration: none;
+                    color: $second-color;
+                }
             }
+
         }
     }
 
@@ -143,7 +156,7 @@
         position: relative;
         bottom: 0;
         width: 100%;
-        
+
         .logoFooter {
             height: 20px;
             margin-top: 4px;
@@ -159,46 +172,46 @@
 
     /*VERSION DE TABLET*/
     @media (min-width:768px) {
-    grid-template-areas:
-        "header nav nav"
-        "sectionA sectionB sectionB"
-        "footer footer footer";
-    
-  
-    /*footer*/
-    footer {
-      position: absolute;
+        grid-template-areas:
+            "header nav nav"
+            "sectionA sectionB sectionB"
+            "footer footer footer";
 
-        .logoFooter {
-        margin-top: 7px;
+
+        /*footer*/
+        footer {
+            position: absolute;
+
+            .logoFooter {
+                margin-top: 7px;
+            }
+
+            .textoFooter {
+                margin-top: 1px;
+            }
         }
-        
-        .textoFooter {
-        margin-top: 1px;
+
+        /*navegador*/
+        .navbar-toggle {
+            color: $second-color;
         }
+
     }
 
-    /*navegador*/
-    .navbar-toggle {
-      color: $second-color;
-    }
-  
-  }
-
-  /*VERSION DE ESCRITORIO*/
+    /*VERSION DE ESCRITORIO*/
     @media (min-width:1024px) {
-    grid-template-areas:
-        "header nav nav"
-        "sectionA sectionB sectionB"
-        "footer footer footer";
-    
+        grid-template-areas:
+            "header nav nav"
+            "sectionA sectionB sectionB"
+            "footer footer footer";
+
         footer {
             .logoFooter {
-            margin-top: 7px;
+                margin-top: 7px;
             }
-        
+
             .textoFooter {
-            margin-top: 1px;
+                margin-top: 1px;
             }
         }
     }
