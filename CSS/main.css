@@ -272,9 +272,9 @@ footer, #noticias footer, #noticias #index footer, #index #noticias footer, #not
     /*footer*/
   }
   #sobreMi .sectionB .fondoInicio {
-    height: 500px;
+    height: 480px;
     transform: translate(-5px);
-    margin-top: 40px;
+    margin-top: 30px;
   }
   #sobreMi .sectionA .textoInicio {
     margin-left: 80px;
@@ -290,6 +290,9 @@ footer, #noticias footer, #noticias #index footer, #index #noticias footer, #not
     line-height: 30px;
     padding-right: 100px;
   }
+  #sobreMi footer, #sobreMi #noticias footer, #noticias #sobreMi footer, #sobreMi #noticias #index footer, #noticias #index #sobreMi footer, #sobreMi #index #noticias footer, #index #noticias #sobreMi footer, #noticias #sobreMi footer, #sobreMi #noticias footer, #index #noticias #sobreMi footer, #noticias #sobreMi #index footer, #index #sobreMi #noticias footer, #sobreMi #noticias #index footer, #noticias #index #sobreMi footer, #sobreMi #index #noticias footer, #sobreMi #index #sobreMi #noticias footer, #noticias #sobreMi #index #sobreMi footer, #sobreMi #noticias #index #sobreMi footer, #sobreMi #index #noticias #sobreMi footer, #index #sobreMi #index #noticias footer, #noticias #index #sobreMi #index footer, #index #noticias #sobreMi #index footer, #index #sobreMi #noticias #index footer, #sobreMi #noticias #index #noticias footer, #noticias #index #noticias #sobreMi footer, #sobreMi #index #noticias #index footer, #index #noticias #index #sobreMi footer, #noticias #sobreMi #noticias footer, #sobreMi #noticias #sobreMi footer, #sobreMi #index footer, #sobreMi #index #noticias footer, #noticias #sobreMi #index footer, #sobreMi #noticias #index footer, #noticias #sobreMi #index footer, #sobreMi #index #noticias footer, #noticias #sobreMi #index footer, #sobreMi #index #noticias footer, #sobreMi #noticias #index footer, #sobreMi #index #noticias #sobreMi footer, #noticias #sobreMi #index footer, #sobreMi #index #sobreMi #noticias footer, #sobreMi #noticias #index footer, #sobreMi #noticias #index #sobreMi footer, #noticias #sobreMi #index #sobreMi footer, #sobreMi #index #noticias footer, #sobreMi #index #sobreMi #noticias footer, #noticias #sobreMi #index #sobreMi footer, #sobreMi #noticias #index #sobreMi footer, #sobreMi #index #noticias #sobreMi footer, #index #sobreMi #index #noticias footer, #noticias #index #sobreMi #index footer, #index #noticias #sobreMi #index footer, #index #sobreMi #noticias #index footer, #sobreMi #noticias #index #noticias footer, #noticias #sobreMi #index #noticias footer, #sobreMi #index #noticias #index footer, #noticias #sobreMi #index #noticias footer, #noticias #sobreMi #noticias #index footer, #sobreMi #index #noticias #sobreMi footer, #sobreMi #noticias #sobreMi #index footer, #index #sobreMi footer, #index #sobreMi #noticias footer, #noticias #index #sobreMi footer, #noticias #index #sobreMi footer, #index #sobreMi #noticias footer, #index #noticias #sobreMi footer, #index #noticias #sobreMi footer, #noticias #index #sobreMi footer, #index #sobreMi #noticias footer, #index #noticias #sobreMi footer, #index #noticias #sobreMi #index footer, #noticias #index #sobreMi #index footer, #index #sobreMi #noticias footer, #index #sobreMi #noticias #index footer, #noticias #index #sobreMi footer, #index #sobreMi #index #noticias footer, #sobreMi #index #sobreMi #noticias footer, #noticias #sobreMi #index #sobreMi footer, #sobreMi #noticias #index #sobreMi footer, #sobreMi #index #noticias #sobreMi footer, #index #sobreMi #index #noticias footer, #noticias #index #sobreMi #index footer, #index #noticias #sobreMi #index footer, #index #sobreMi #noticias #index footer, #noticias #index #sobreMi #noticias footer, #noticias #index #noticias #sobreMi footer, #index #sobreMi #noticias #index footer, #index #noticias #index #sobreMi footer, #index #noticias #sobreMi #noticias footer, #noticias #index #sobreMi #noticias footer, #index #sobreMi #noticias #sobreMi footer, #sobreMi footer, #sobreMi #noticias footer, #noticias #sobreMi footer, #sobreMi #noticias #index footer, #noticias #index #sobreMi footer, #sobreMi #index #noticias footer, #index #noticias #sobreMi footer, #noticias #sobreMi footer, #sobreMi #noticias footer, #index #noticias #sobreMi footer, #noticias #sobreMi #index footer, #index #sobreMi #noticias footer, #sobreMi #noticias #index footer, #noticias #index #sobreMi footer, #sobreMi #index #noticias footer, #sobreMi #index #sobreMi #noticias footer, #noticias #sobreMi #index #sobreMi footer, #sobreMi #noticias #index #sobreMi footer, #sobreMi #index #noticias #sobreMi footer, #index #sobreMi #index #noticias footer, #noticias #index #sobreMi #index footer, #index #noticias #sobreMi #index footer, #index #sobreMi #noticias #index footer, #sobreMi #noticias #index #noticias footer, #noticias #index #noticias #sobreMi footer, #sobreMi #index #noticias #index footer, #index #noticias #index #sobreMi footer, #noticias #sobreMi #noticias footer, #sobreMi #noticias #sobreMi footer {
+    position: absolute;
+  }
   #sobreMi footer .logoFooter {
     margin-top: 7px;
   }
@@ -304,6 +307,7 @@ footer, #noticias footer, #noticias #index footer, #index #noticias footer, #not
   margin: 0;
   background-color: #AAAAAA;
   display: grid;
+  overflow: auto;
   grid-template-areas: "header nav nav" "main main main" "footer footer footer";
   /*VERSION DE TABLET*/
   /*VERSION DE CELULAR*/
@@ -334,9 +338,10 @@ footer, #noticias footer, #noticias #index footer, #index #noticias footer, #not
   margin: 10px;
   /*display flex*/
   display: flex;
-  margin-top: 20px;
+  margin-top: 15px;
   flex-direction: row;
   justify-content: space-evenly;
+  margin-bottom: 12px;
 }
 #noticias main .noticias1 figure {
   text-align: center;
@@ -394,8 +399,8 @@ footer, #noticias footer, #noticias #index footer, #index #noticias footer, #not
     width: 650px;
   }
   #noticias footer, #noticias #index footer, #index #noticias footer, #noticias #sobreMi footer, #sobreMi #noticias footer, #noticias footer {
-    position: relative;
     margin-top: 30px;
+    position: relative;
   }
 }
 @media (max-width: 700px) {
@@ -680,6 +685,10 @@ footer, #noticias footer, #noticias #index footer, #index #noticias footer, #not
   margin-left: 35px;
   margin-top: -48px;
 }
+#contacto .sectionB .textoContacto .subtitulo a {
+  text-decoration: none;
+  color: white;
+}
 #contacto footer, #contacto #index footer, #index #contacto footer, #contacto #sobreMi footer, #sobreMi #contacto footer, #contacto #noticias footer, #noticias #contacto footer {
   background-color: #2e2e2e;
   grid-area: footer;
@@ -704,9 +713,6 @@ footer, #noticias footer, #noticias #index footer, #index #noticias footer, #not
     /*footer*/
     /*navegador*/
   }
-  #contacto footer, #contacto #index footer, #index #contacto footer, #contacto #sobreMi footer, #sobreMi #contacto footer, #contacto #noticias footer, #noticias #contacto footer {
-    position: absolute;
-  }
   #contacto footer .logoFooter {
     margin-top: 7px;
   }
@@ -720,6 +726,9 @@ footer, #noticias footer, #noticias #index footer, #index #noticias footer, #not
 @media (min-width: 1024px) {
   #contacto {
     grid-template-areas: "header nav nav" "sectionA sectionB sectionB" "footer footer footer";
+  }
+  #contacto footer, #contacto #index footer, #index #contacto footer, #contacto #sobreMi footer, #sobreMi #contacto footer, #contacto #noticias footer, #noticias #contacto footer {
+    position: absolute;
   }
   #contacto footer .logoFooter {
     margin-top: 7px;
